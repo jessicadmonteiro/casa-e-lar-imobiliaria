@@ -4,6 +4,7 @@ export const Ul = styled.ul`
     width: 90%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 
     margin-top: 20px;
@@ -14,8 +15,9 @@ export const Ul = styled.ul`
         display: flex;
         flex-direction: column;
 
-        border: 0.5px solid;
+        border: 0.5px solid var(--color-brand1);
         border-radius: 10px;
+        box-shadow: 1px 1px var(--color-grey-6);
 
         figure {
             height: 170px;
@@ -25,13 +27,13 @@ export const Ul = styled.ul`
 
             overflow: hidden;
 
-            background-color: var(--color-grey-7);
+            background-color: var(--color-brand1);
 
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
 
             img {
-                width: 100%;
+                width: 200px;
                 transition: 0.8s ease;
                 object-fit: cover;
             }
@@ -59,7 +61,23 @@ export const Ul = styled.ul`
                 color: var(--color-brand2);
                 background-color:  transparent;
                 border: solid 1px;
-             }
+                transition: 1s ease;
+            }
+
+            button:hover {
+                background-color: var(--color-brand2);
+                color: var(--color-whiteFixed);
+
+                transition: 1.5s ease;
+            }
         }
     }
+
+    @media (max-width: 729px){
+        flex-wrap: nowrap;
+        flex-direction: row; 
+
+        overflow-x: auto;
+    }
+
 `

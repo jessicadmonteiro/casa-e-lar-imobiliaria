@@ -1,10 +1,12 @@
-import { Home } from "./pages/Home"
+import { RoutesMain } from "./routes"
+import { GlobalStyle } from "./styles/global"
 
 const App = () => {
 
   return (
     <>
-     <Home/>
+      <GlobalStyle/>
+      <RoutesMain/>
     </>
   )
 }

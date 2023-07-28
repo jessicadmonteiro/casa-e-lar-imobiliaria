@@ -9,9 +9,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --color-brand1: #cdf0e8;
+    --color-brand1: #B0A6F0;
     --color-brand2: #EBCD6C;
-    --color-brand3: #B0A6F0;
+    --color-brand3: #3B317D;
     --color-brand4: #EDEAFD;
 
     --color-grey-0: #0B0D0D;
@@ -69,23 +69,27 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   ::-webkit-scrollbar {
-    background-color: var(--color--grey-8);
+    background-color: var(--color-grey-8);
   
     height: 10px;
     width: 10px;
   
-    border: solid 1px var(--color--grey-2);
+    border: solid 1px var(--color-grey-2);
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: var(--color--brand1);
+    background-color: var(--color-brand1);
   
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color--brand2);
+    background-color: var(--color-brand2);
   
     border-radius: 4px;
   }
@@ -93,7 +97,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: var(--color--grey-8);
+    background-color: var(--color-grey-10);
   }
 
 `
