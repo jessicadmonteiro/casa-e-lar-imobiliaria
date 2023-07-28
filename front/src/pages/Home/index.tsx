@@ -1,6 +1,8 @@
 import { Adverts } from "../../componentes/Adverts"
+import { Footer } from "../../componentes/Footer"
 import { Header } from "../../componentes/Header"
 import { Search } from "../../componentes/Search"
+import { Container } from "../../styles/container"
 import { ContainerCover } from "./style"
 
 export const Home = () => {
@@ -12,12 +14,14 @@ export const Home = () => {
                 page1="/login"
                 page2="register"
             />
-            
-            <ContainerCover>
-                <h1>Enconte o lar dos seus sonhos, onde o futuro se constrói e as memórias ganham vida.</h1>
-            </ContainerCover>
-            <Search/>
-            <Adverts/>
+            <Container>
+                <ContainerCover>
+                    <h1>Enconte o lar dos seus sonhos, onde o futuro se constrói e as memórias ganham vida.</h1>
+                </ContainerCover>
+                <Search/>
+                <Adverts/>
+            </Container>
+            <Footer/>
         </>
     )
 }

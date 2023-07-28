@@ -33,4 +33,4 @@ export const ContainerCover = styled.div`
     text-align: center;
     z-index: 1;
   }
-`;
+`
