@@ -9,8 +9,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --color-brand1: #B0A6F0;
-    --color-brand2: #EBCD6C;
+    --color-brand1: #270570;
+    --color-brand2: #B0A6F0;
     --color-brand3: #3B317D;
     --color-brand4: #EDEAFD;
 

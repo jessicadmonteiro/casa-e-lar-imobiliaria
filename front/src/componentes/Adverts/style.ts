@@ -10,8 +10,8 @@ export const Ul = styled.ul`
     margin-top: 20px;
 
     li {
-        width: 200px;
-        height: 280px;
+        width: 260px;
+        height: 310px;
         display: flex;
         flex-direction: column;
 
@@ -20,7 +20,7 @@ export const Ul = styled.ul`
         box-shadow: 1px 1px var(--color-grey-6);
 
         figure {
-            height: 170px;
+            height: 190px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -33,7 +33,7 @@ export const Ul = styled.ul`
             border-top-right-radius: 10px;
 
             img {
-                width: 200px;
+                width: 260px;
                 transition: 0.8s ease;
                 object-fit: cover;
             }
