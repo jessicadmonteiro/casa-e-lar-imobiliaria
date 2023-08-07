@@ -19,22 +19,15 @@ export const FormSearch = styled.form`
         }
     }
 
+    button {
+        width: 55px;
+        height: 25px;
+    }
+
     input::placeholder {
         font-size: 14px;
         color: var(--color-brand1);
         padding-left: 10px;
-    }
-
-    button {
-        width: 55px;
-        height: 25px;
-        font-size: 14px;
-
-        color: var(--color-grey-8);
-        background-color: var(--color-brand1);
-        border: 1px;
-        border-radius: 4px;
-
     }
 
     @media (max-width: 400px) {

@@ -73,6 +73,15 @@ export const Ul = styled.ul`
         }
     }
 
+    #container-search-not-found {
+        width: 90vw;
+        text-align: center;
+
+        h2 {
+            color: var(--color-grey-2);
+        }
+    }
+
     @media (max-width: 729px){
         flex-wrap: nowrap;
         flex-direction: row; 

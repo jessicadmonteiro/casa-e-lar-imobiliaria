@@ -1,8 +1,13 @@
+import { IData } from "../../interfaces/data"
 import { Ul } from "./style"
-import { data } from "../../pages/Adverts/data"
 import { useNavigate } from "react-router-dom"
 
-export const Adverts = () => {
+interface AdvertsProps {
+    data: IData[];
+    searchTerm: string;
+}
+
+export const Adverts = ({data, searchTerm}: AdvertsProps) => {
 
     const navigate = useNavigate()
 
@@ -13,22 +18,26 @@ export const Adverts = () => {
 
     return (
         <>
-        
             <Ul> 
                 {
-                    data.map((data) => (
-                        <li key={data.id} onClick={() => {handleViewMoreClick(data.id)}}>
-                            <figure>
-                                <img src={data.image.image1} alt="" />
-                            </figure>
-                            <div>
-                                <h4>{data.category}</h4>
-                                <p>{data.address.city} - {data.address.state}</p>
-                                <p>{data.value}</p>
-                                <button onClick={() => {handleViewMoreClick(data.id)}}>Veja Mais</button>
-                            </div>
-                        </li>
-                    ))
+                    data.length !== 0 ? (
+                        data.map((data) => (
+                            <li key={data.id} onClick={() => {handleViewMoreClick(data.id)}}>
+                                <figure>
+                                    <img src={data.image.image1} alt="" />
+                                </figure>
+                                <div>
+                                    <h4>{data.category}</h4>
+                                    <p>{data.address.city} - {data.address.state}</p>
+                                    <p>{data.value}</p>
+                                    <button onClick={() => {handleViewMoreClick(data.id)}}>Veja Mais</button>
+                                </div>
+                            </li>
+                        ))
+                    ) : 
+                        <div id="container-search-not-found">
+                            <h2>Nenhum resultado encontrado para: {searchTerm}</h2>
+                        </div>
                 }
             </Ul>
          

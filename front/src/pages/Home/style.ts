@@ -34,3 +34,40 @@ export const ContainerCover = styled.div`
     z-index: 1;
   }
 `
+export const ContainerResult = styled.div`
+  width: 90vw;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  #container-text-result {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h2{
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-grey-1);
+    }
+    
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-grey-3);
+    }
+    
+  }
+
+  button {
+    width: 150px;
+    height: 30px;
+  }
+
+  @media(max-width: 433px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+`

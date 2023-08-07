@@ -51,8 +51,6 @@ const GlobalStyle = createGlobalStyle`
     --font-lexend: "Lexend", sans-serif;
     --font-inter: "Inter", sans-serif;
     
-    font-size: 60%;
-    
   }
 
   @media(min-width: 700px){
