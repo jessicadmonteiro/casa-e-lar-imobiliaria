@@ -1,4 +1,4 @@
-import { FormSearch } from "./style" 
+import { FormSearch } from "./style";
 import { ButtonBrand1 } from "../../styles/button";
 
 interface SearchProps {
@@ -8,13 +8,17 @@ interface SearchProps {
     setResultSearch: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const Search = ({ onSearch, searchTerm, setSearchTerm, setResultSearch}: SearchProps) => {
-    
+export const Search = ({
+    onSearch,
+    searchTerm,
+    setSearchTerm,
+    setResultSearch,
+}: SearchProps) => {
     const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        onSearch(searchTerm)
-        setResultSearch(true)
-    }
+        e.preventDefault();
+        onSearch(searchTerm);
+        setResultSearch(true);
+    };
 
     return (
         <>
@@ -28,5 +32,5 @@ export const Search = ({ onSearch, searchTerm, setSearchTerm, setResultSearch}: 
                 <ButtonBrand1 type="submit">Buscar</ButtonBrand1>
             </FormSearch>
         </>
-    )
-}
+    );
+};

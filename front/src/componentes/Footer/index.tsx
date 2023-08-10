@@ -1,18 +1,21 @@
-import Logo from "../../assets/logo footer.png"
-import { FooterContainer, LinkFooter } from "./style"
+import { useNavigate } from "react-router-dom";
+import Logo from "../../assets/logo footer.png";
+import { FooterContainer, LinkFooter } from "./style";
+
 export const Footer = () => {
+    const navigate = useNavigate();
 
     const ScrollToTopButton = () => {
         window.scrollTo({
-          behavior: "smooth",
-          top: 0,
-        })
-    }
+            behavior: "smooth",
+            top: 0,
+        });
+    };
 
     return (
         <>
             <FooterContainer>
-                <img src={Logo} alt="Logo" />
+                <img src={Logo} alt="Logo" onClick={() => navigate("/")} />
                 <div id="container-links-text">
                     <div>
                         <LinkFooter to={"/"}> Sobre Nós</LinkFooter>
@@ -23,5 +26,5 @@ export const Footer = () => {
                 <button onClick={ScrollToTopButton}>^</button>
             </FooterContainer>
         </>
-    )
-}
+    );
+};

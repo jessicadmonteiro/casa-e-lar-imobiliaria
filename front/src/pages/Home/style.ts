@@ -71,3 +71,34 @@ export const ContainerResult = styled.div`
     gap: 10px;
   }
 `
+
+export const ContainerSearchFiltering = styled.div`
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0 0 30px;
+
+    #button-to-clean {
+        width: 110px;
+        height: 30px;
+    }
+
+    @media(max-width: 729px){
+        height: 100px;
+        flex-direction: row;
+        overflow-x: auto;
+
+        #button-to-clean{
+            display: none;
+        }
+    }
+`
+export const ContainerFilterCard = styled.div`
+    display: flex;
+    gap:20px;
+
+    @media(max-width: 729px){
+        flex-direction: column;
+    }
+`

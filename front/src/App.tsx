@@ -1,14 +1,13 @@
-import { RoutesMain } from "./routes"
-import { GlobalStyle } from "./styles/global"
+import { RoutesMain } from "./routes";
+import { GlobalStyle } from "./styles/global";
 
 const App = () => {
+    return (
+        <>
+            <GlobalStyle />
+            <RoutesMain />
+        </>
+    );
+};
 
-  return (
-    <>
-      <GlobalStyle/>
-      <RoutesMain/>
-    </>
-  )
-}
-
-export default App
+export default App;

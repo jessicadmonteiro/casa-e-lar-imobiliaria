@@ -1,15 +1,20 @@
-import { ForwardedRef, forwardRef, InputHTMLAttributes } from "react"
-import { FieldError } from "react-hook-form"
+import { ForwardedRef, forwardRef, InputHTMLAttributes } from "react";
+import { FieldError } from "react-hook-form";
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
-    label?: string
-    error?: FieldError
+    label?: string;
+    error?: FieldError;
 }
 
-export const Input = forwardRef(({label, error, ...rest}: IInputProps, ref: ForwardedRef<HTMLInputElement>) => (
-    <div>
-        {label? <label>{label}</label> : null}
-        <input ref={ref} {...rest}/>
-        {error ? <span>{error.message}</span> : null}
-    </div>
-))
+export const Input = forwardRef(
+    (
+        { label, error, ...rest }: IInputProps,
+        ref: ForwardedRef<HTMLInputElement>
+    ) => (
+        <div>
+            {label ? <label>{label}</label> : null}
+            <input ref={ref} {...rest} />
+            {error ? <span>{error.message}</span> : null}
+        </div>
+    )
+);

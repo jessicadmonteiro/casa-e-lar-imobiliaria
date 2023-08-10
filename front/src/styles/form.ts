@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const ContainerForm = styled.div`
     width: 300px;
@@ -24,14 +24,14 @@ export const ContainerForm = styled.div`
         border-radius: 4px;
         margin: 20px 0 15px;
     }
-`
+`;
 
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-   
+
     label {
         color: var(--color-grey-3);
         margin: 10px 0 5px 0;
@@ -41,12 +41,11 @@ export const Form = styled.form`
         width: 280px;
         height: 30px;
 
-        border: solid 1px var(--color-brand1);    
+        border: solid 1px var(--color-brand1);
         border-radius: 4px;
         margin-top: 4px;
     }
 
-    
     input::placeholder {
         padding-left: 10px;
         color: var(--color-grey-3);
@@ -55,5 +54,4 @@ export const Form = styled.form`
     p {
         text-align: right;
     }
-
-`
+`;
