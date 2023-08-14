@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const FormSearch = styled.form`
     margin: 50px 10px 30px 70px;
-    
+
     input {
         width: 200px;
         height: 25px;
@@ -14,8 +14,8 @@ export const FormSearch = styled.form`
         outline: none;
 
         &:focus {
-            border-color: var(--color-brand1); 
-            box-shadow: 0 0 5px var(--color-grey-5); 
+            border-color: var(--color-brand1);
+            box-shadow: 0 0 5px var(--color-grey-5);
         }
     }
 
@@ -36,4 +36,4 @@ export const FormSearch = styled.form`
             width: 150px;
         }
     }
-`
+`;

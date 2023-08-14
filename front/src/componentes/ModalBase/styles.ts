@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100vw;
@@ -20,9 +20,9 @@ export const Container = styled.div`
         background-color: var(--color-gray-2);
         border-radius: 4px;
         box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.25);
-        
+
         padding: 22px;
-  
+
         li {
             width: 100%;
             height: 100%;
@@ -34,32 +34,30 @@ export const Container = styled.div`
                 img {
                     width: 400px;
                     height: 450px;
-                    
+
                     border-radius: 4px;
 
                     :hover {
                         zoom: 150%;
                     }
-
                 }
 
                 @media (max-width: 565px) {
                     height: 350px;
-                  
+
                     img {
                         width: 300px;
                         height: 350px;
                     }
-            }
+                }
             }
         }
-
     }
+`;
 
-`
 export const ContainerButtons = styled.div`
     width: 97%;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,5 +80,4 @@ export const ContainerButtons = styled.div`
     @media (max-width: 565px) {
         top: 190px;
     }
-`
-
+`;

@@ -26,7 +26,7 @@ export const Depositions = () => {
             <Title>Depoimentos</Title>
             <Ul>
                 {depositions.map((dep) => (
-                    <li>
+                    <li key={dep.id}>
                         <span>
                             <div>{createInitials(dep.name)}</div>
                             <h4>{dep.name}</h4>

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Ul = styled.ul`
     width: 90%;
@@ -59,7 +59,7 @@ export const Ul = styled.ul`
                 font-size: 1.1rem;
 
                 color: var(--color-brand2);
-                background-color:  transparent;
+                background-color: transparent;
                 border: solid 1px;
                 transition: 1s ease;
             }
@@ -82,11 +82,10 @@ export const Ul = styled.ul`
         }
     }
 
-    @media (max-width: 729px){
+    @media (max-width: 729px) {
         flex-wrap: nowrap;
-        flex-direction: row; 
+        flex-direction: row;
 
         overflow-x: auto;
     }
-
-`
+`;

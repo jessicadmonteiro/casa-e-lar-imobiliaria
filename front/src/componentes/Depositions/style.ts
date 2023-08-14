@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Title = styled.h2`
     width: 90vw;
@@ -7,14 +7,14 @@ export const Title = styled.h2`
     font-size: 20px;
 
     color: var(--color-grey-1);
-`
+`;
 
 export const Ul = styled.ul`
     width: 90vw;
 
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row; 
+    flex-direction: row;
     gap: 20px;
 
     overflow-x: auto;
@@ -65,7 +65,6 @@ export const Ul = styled.ul`
         p {
             font-size: 14px;
             font-weight: 400;
-           
         }
     }
-` 
+`;

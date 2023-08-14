@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ContainerHeader = styled.header`
@@ -26,12 +26,12 @@ export const ContainerHeader = styled.header`
             width: 150px;
         }
     }
-    
+
     #img-menu {
         width: 40px;
         height: 25px;
         padding-right: 2vw;
-        
+
         cursor: pointer;
 
         @media (min-width: 650px) {
@@ -54,7 +54,6 @@ export const ContainerHeader = styled.header`
         padding: 10px;
 
         background-color: var(--color-grey-10);
-
 
         @media (min-width: 650px) {
             display: none;
@@ -79,11 +78,13 @@ export const ContainerHeader = styled.header`
 
         @media (max-width: 649px) {
             display: none;
-            button { display: none; }
+            button {
+                display: none;
+            }
         }
     }
-   
-`
+`;
+
 export const LinkStylendMenu = styled(Link)`
     width: 100px;
     height: 35px;
@@ -94,13 +95,12 @@ export const LinkStylendMenu = styled(Link)`
     text-decoration: none;
 
     box-shadow: 0 1px var(--color-grey-7);
-`
+`;
 
 export const LinkDesktop = styled(Link)`
     font-size: 14px;
     color: var(--color-brand3);
-
-`
+`;
 
 export const CloseButton = styled.button`
     font-size: 13px;
@@ -114,4 +114,4 @@ export const CloseButton = styled.button`
     color: var(--color-grey-2);
     background-color: transparent;
     border: none;
-`
+`;

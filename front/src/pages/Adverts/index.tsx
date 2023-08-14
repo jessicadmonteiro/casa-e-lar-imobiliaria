@@ -8,6 +8,7 @@ import { ContainerButtons } from "../../componentes/ModalBase/styles";
 import { AdvertImagesModal } from "../../componentes/ModalBase";
 import { useState } from "react";
 import { Depositions } from "../../componentes/Depositions";
+import { Link } from "react-router-dom";
 
 export const SpecificAd = () => {
     const [showImagesModal, setShowImagesModal] = useState<boolean>(false);
@@ -18,6 +19,9 @@ export const SpecificAd = () => {
     const { id } = useParams();
 
     const specificAd = data.find((ad) => ad.id === parseInt(id!));
+
+    const realtorNumber = '556200000000'; 
+    const message = `Olá, estou interessado no imóvel que se localiza na Cidade de ${specificAd?.address.city}, ${specificAd?.address.street}, N ${specificAd?.address.number}.`;
 
     if (!specificAd) {
         return <div>Anúncio não encontrado.</div>;
@@ -60,7 +64,7 @@ export const SpecificAd = () => {
                                 {">"}
                             </button>
                         </ContainerButtons>
-                        <li>
+                        <li key={specificAd.id}>
                             <figure>
                                 {openImage ? (
                                     <img
@@ -90,7 +94,7 @@ export const SpecificAd = () => {
                     <div id="main-image">
                         {Object.values(specificAd.image).map(
                             (imageUrl, index) => (
-                                <figure
+                                <figure key={specificAd.id}
                                     onClick={() => {
                                         handleImageClick(imageUrl);
                                     }}
@@ -128,6 +132,10 @@ export const SpecificAd = () => {
                             {specificAd.address.zipCode}
                         </p>
                     </aside>
+
+                    <div id="container-button-schedule">
+                        <Link id="link-schedule" target="_blank" to={`https://api.whatsapp.com/send?phone=${realtorNumber}&text=${encodeURIComponent(message)}`}>Agendar visita</Link>
+                    </div>
                 </ContainerSpecificAd>
                 <Depositions />
             </Container>

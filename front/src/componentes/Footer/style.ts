@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { Link } from "react-router-dom"
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
     width: 100vw;
@@ -37,10 +37,10 @@ export const FooterContainer = styled.footer`
             margin-top: 10px;
         }
     }
+`;
 
-`
 export const LinkFooter = styled(Link)`
     font-size: 11px;
     padding: 5px;
     color: var(--color-brand3);
-`
+`;
